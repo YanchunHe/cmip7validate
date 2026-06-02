@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
-- file: example_notebook
+- file: notebook_2D
+- file: notebook_3D
+- file: notebook_zonal
+- file: notebook_section
