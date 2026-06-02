@@ -1,6 +1,6 @@
-# NorESM3spinup
+# cmip7validate
 
-NorESM3 tuning and spinup
+Quick validate the CMIP7 data of  NorESM3 experiment
 
 ## Usage
 
