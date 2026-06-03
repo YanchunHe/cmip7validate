@@ -2,8 +2,9 @@
 # Configuration for the experiment
 
 #######################################################################################
-
+source_id                   : DUMMY_MODEL
 experiment_id               : piControl
-variant                     : r1i1p1f1
+variant_label               : r1i1p1f1
+grid_label                  : g999
 version                     : v20260601
 

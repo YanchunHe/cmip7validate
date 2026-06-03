@@ -1,4 +1,6 @@
-jupyter-book
+cartopy
+ghp-import
+jupyter-book=1.0.4.post1
 matplotlib
 numpy
-ghp-import
+xarray

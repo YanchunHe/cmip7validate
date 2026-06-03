@@ -32,3 +32,46 @@ def load_grid_vertex(grid_file, grid_type='p'):
     clon_new[-1, -1] = clon[2, -1, -1]
 
     return lat, lon, clat_new, clon_new
+
+def read_variables(ifile='data/methods.txt'):
+    """
+    Load variable list with defined methods for plotting
+
+    Args:
+        infile (str): input text file
+
+    Returns:
+        dictionary: dicts
+    """
+
+    import ast
+    
+    dicts = {}
+    
+    # Read line by line and split back into pairs
+    with open(ifile, "r") as file:
+        for line in file:
+            if line.strip():  # Skip empty lines
+                if ":" in line:
+                    key_str, value_str = line.strip().split(":", 1)
+                    key = ast.literal_eval(key_str.strip())
+                    value = ast.literal_eval(value_str.strip())
+                    dicts[key] = value
+                else:
+                    key = ast.literal_eval(line)
+                    dicts[key] = None
+    
+    return dicts
+
+def read_compound_name(infile='data/variables.nml'):
+
+    import re
+    strs = []
+    pattern = r"'((?:[^']*\.){4}[^']*)'"
+    with open(infile) as f:
+        lines = f.readlines()
+        for line in lines:
+            str = re.findall(pattern, line)
+            if len(str) > 0:
+                strs.append(str[0])
+    return strs
