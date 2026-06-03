@@ -71,7 +71,7 @@
 'ocean.thetao.tavg-d300m-hxy-sea.mon.glb'       
 'ocean.thetao.tavg-d700m-hxy-sea.mon.glb'       
 'ocean.thetao.tavg-ol-hm-sea.mon.glb'           
-'ocean.thetao.tavg-ol-hxy-sea.mon.glb'          
+'ocean.thetao.tavg-ol-hxy-sea.mon.glb'          : {'vertical': 'mean', 'timeseries': 'mean', 'cmap': 'cmocean.cm.thermal'}
 'ocean.thetaot.tavg-u-hxy-sea.mon.glb'          
 'ocean.thkcello.tavg-ol-hxy-sea.mon.glb'        
 'ocean.thkcello.ti-ol-hxy-sea.fx.glb'           
