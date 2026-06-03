@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 chapters:
-- file: notebook_2D
-- file: notebook_3D
-- file: notebook_zonal
-- file: notebook_section
+- file: ocean_2D
+- file: ocean_3D
+- file: ocean_zonal
+- file: ocean_section
