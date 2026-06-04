@@ -2,10 +2,10 @@
 # Configuration for the experiment
 
 ##################################################################################
-cmorout         : '/scratch/yanchun/cmorout'
-source_id       : 'DUMMY-MODEL'
-experiment_id   : 'piControl'
-variant_label   : 'r1i1p1f1'
-grid_label      : 'g999'
-version         : 'v20260601'
+cmorout         : /scratch/yanchun/cmorout
+source_id       : DUMMY-MODEL
+experiment_id   : piControl
+variant_label   : r1i1p1f1
+grid_label      : g999
+version         : v20260601
 

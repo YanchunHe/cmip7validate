@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 # get version from yml file
 source_id=$(cat params.yml |grep 'source_id' |cut -d: -f2 |sed 's/ //g')
@@ -12,7 +13,7 @@ exp_root=${www_root}
 
 # check group id
 gid=$(id -g -n)
-if [ "$gid" != "ipcc" ] && [ "$gid"!= "ns9560k" ]; then
+if [ "$gid" != "ipcc" ] && [ "$gid" != "ns9560k" ]; then
   newgrp -c ipcc
 fi
 if [ $? != 0 ]; then
@@ -36,7 +37,7 @@ done
 # build the book
 source /cluster/software/Miniforge3/24.1.2-0/etc/profile.d/conda.sh
 conda activate /nird/datalake/NS16000B/cmip7validate-env
-jupyter-book build .
+jupyter-book build -n .
 
 # publish
 chmod -R g+w _build/html
