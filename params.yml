@@ -2,7 +2,7 @@
 # Configuration for the experiment
 
 #######################################################################################
-source_id                   : DUMMY_MODEL
+source_id                   : DUMMY-MODEL
 experiment_id               : piControl
 variant_label               : r1i1p1f1
 grid_label                  : g999
